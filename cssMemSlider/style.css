@@ -10,17 +10,17 @@ h1{
     font-family: Arial;
     margin: 0 auto;
     color: #acb6be; 
-    font-size: 40px;
+    font-size: 30px;
 }
 
 p{
     font-family: Arial;
     color: #acb6be;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .slider_container{
-    max-width:100%;    
+    max-width:100%;  
     margin: 0 auto;
     border-radius: 5px;
     background-color: #232c38;
@@ -30,7 +30,8 @@ p{
 }
 
 .slider_wrapper{
-    width: 944px;
+    margin-top: 20px; 
+    width: 600px;
     height: auto;
     padding-left: 40px;
     padding-right: 40px;
@@ -39,7 +40,8 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #14191f;    
+    background-color: #14191f; 
+    border-radius: 10px;   
 }
 .slider_wrapper > input {
 	display: none;
@@ -53,21 +55,25 @@ p{
     align-items: center;    
 }
 .slider_img{
-    width: 100%;
-    height: auto;
+    width: 100%;    
     overflow: hidden; 
     border-radius: 10px;    
     border: 5px #acb6be solid;
 }
 
+.slide{    
+    transition: all .6s ease;
+    width: 100%;  
+}
+
 img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 
 .slider_text{
-    width: 50%;
+    width: 60%;
     height: 100%;
     overflow: hidden; 
 }
@@ -107,14 +113,12 @@ label::before{
 }
 
 .slides{
+    position: relative;
+    left: 0%;
     width: 400%;
-    height: 100%;
+    height: auto;
     display: flex;
-}
-
-.slide{
     transition: all .6s ease;
-    width: 25%;  
 }
 
 .text{    
@@ -128,3 +132,28 @@ label::before{
     align-items: center;    
 }
 
+#rad1:checked ~ .slider_img .slides{
+    left: 0;
+}
+#rad2:checked ~ .slider_img .slides{
+    left: -100%;
+}
+#rad3:checked ~ .slider_img .slides{
+    left: -200%;
+}
+#rad4:checked ~ .slider_img .slides{
+    left: -300%;
+}
+
+#rad1:checked ~ .slider_bottom .controls label:nth-child(1){
+    background-color:#acb6be;
+}
+#rad2:checked ~ .slider_bottom .controls label:nth-child(2){
+    background-color:#acb6be;
+}
+#rad3:checked ~ .slider_bottom .controls label:nth-child(3){
+    background-color:#acb6be;
+}
+#rad4:checked ~ .slider_bottom .controls label:nth-child(4){
+    background-color:#acb6be;
+}

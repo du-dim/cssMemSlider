@@ -1,2 +1,2 @@
 # cssMemSlider
-https://du-dim.github.io/cssMemSlider/index.html
+https://du-dim.github.io/cssMemSlider/cssMemSlider/index.html

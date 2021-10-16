@@ -10,12 +10,13 @@ h1{
     font-family: Arial;
     margin: 0 auto;
     color: #acb6be; 
+    font-size: 40px;
 }
 
 p{
     font-family: Arial;
     color: #acb6be;
-    font-size: 19px;
+    font-size: 28px;
 }
 
 .slider_container{
@@ -66,21 +67,20 @@ img{
 
 
 .slider_text{
-    width: 30%;
+    width: 50%;
     height: 100%;
     overflow: hidden; 
 }
 
 .controls{
-    width: 30%;
+    width: 110px;
     height: 10%;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;    
 }
 .bullet{
     width: 15px;
-    height: 15px;
-    margin-left: 10px;
+    height: 15px;   
     border: 2px #acb6be solid;
     object-fit: cover;
     border-radius: 50%;
@@ -99,6 +99,7 @@ label::before{
     top: -7px;
     left: -8px;
     border-radius: 50%;
+    
 }
 
 .bullet:hover{
@@ -113,17 +114,17 @@ label::before{
 
 .slide{
     transition: all .6s ease;
-    width: 25%;
+    width: 25%;  
 }
 
 .text{    
     transition: all .6s ease;
-    width: 25%;
+    width: 50%;    
 }
 .text_colection {
     width: 400%;
     height: 100%;
     display: flex; 
-    align-items: center;
+    align-items: center;    
 }
 

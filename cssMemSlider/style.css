@@ -54,26 +54,27 @@ p{
     justify-content: space-between;
     align-items: center;    
 }
-.slider_img{
+.slider_img{    
     width: 100%;    
     overflow: hidden; 
     border-radius: 10px;    
-    border: 5px #acb6be solid;
+    border: 4px #acb6be solid;
 }
 
 .slide{    
-    transition: all .6s ease;
-    width: 100%;  
+    width: 100%; 
+    margin-bottom: -5px; 
 }
 
-img{
+.slide>img{
     width: 100%;
     height: auto;
+    object-fit: cover;  
 }
 
 
 .slider_text{
-    width: 60%;
+    width: 65%;
     height: 100%;
     overflow: hidden; 
 }
@@ -114,22 +115,24 @@ label::before{
 
 .slides{
     position: relative;
-    left: 0%;
+    left: 0;
     width: 400%;
     height: auto;
     display: flex;
-    transition: all .6s ease;
+    transition: all .5s ease;
 }
 
-.text{    
-    transition: all .6s ease;
-    width: 50%;    
-}
 .text_colection {
+    position: relative;
+    left: 0;
     width: 400%;
     height: 100%;
     display: flex; 
-    align-items: center;    
+    align-items: center; 
+    transition: all .6s ease;   
+}
+.text{    
+    width: 100%;      
 }
 
 #rad1:checked ~ .slider_img .slides{
@@ -156,4 +159,17 @@ label::before{
 }
 #rad4:checked ~ .slider_bottom .controls label:nth-child(4){
     background-color:#acb6be;
+}
+
+#rad1:checked ~ .slider_bottom .slider_text .text_colection{
+    left: 0;
+}
+#rad2:checked ~ .slider_bottom .slider_text .text_colection{
+    left: -100%;
+}
+#rad3:checked ~ .slider_bottom .slider_text .text_colection{
+    left: -200%;
+}
+#rad4:checked ~ .slider_bottom .slider_text .text_colection{
+    left: -300%;
 }

@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="slider_container">
+<body>   
+    <header class="header_container">
+        <div class="header_wrapper">
+            <h1>CSS-Mem-Slider</h1>
+        </div>
+    </header>
+    <main class="slider_container">
         <div class="slider_wrapper">            
             <input type="radio" name="rad" id="rad1" checked>
             <input type="radio" name="rad" id="rad2">
             <input type="radio" name="rad" id="rad3">
             <input type="radio" name="rad" id="rad4">            
-            <h1>CSS-Mem-Slider</h1>
             <div class="slider_img">
                 <div class="slides">                    
                     <div class="slide"><img src="img/img01.jpg" alt=""></div>
@@ -50,6 +54,23 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer class="footer_container">
+        <div class="line_footer"></div>
+        <div class="footer_wrapper">
+            <div class="footer-link">
+                <a href="https://github.com/du-dim" title="https://github.com/du-dim" target="_blank">
+                    <img class="icon"
+                        src="img/Octocat.png" alt="icon"></a>
+            </div>
+            <div class="footer-link">
+                <p>© 2021</p>
+            </div>            
+            <div class="footer-link">
+                <a href="https://rs.school/js/" title="Link to the course" target="_blank">
+                    <img class="icon" src="img/rs_school_js.svg" alt="icon"></a>
+            </div>
+        </div>
+        </footer>
 </body>
 </html>

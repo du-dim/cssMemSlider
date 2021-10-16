@@ -10,16 +10,17 @@ h1{
     font-family: Arial;
     margin: 0 auto;
     color: #acb6be; 
-    font-size: 30px;
+    font-size: 28px;
 }
 
 p{
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
     color: #acb6be;
-    font-size: 22px;
+    font-size: 18px;
 }
-
-.slider_container{
+.header_container{
     max-width:100%;  
     margin: 0 auto;
     border-radius: 5px;
@@ -29,7 +30,7 @@ p{
     justify-content: center;
 }
 
-.slider_wrapper{
+.header_wrapper{
     margin-top: 20px; 
     width: 600px;
     height: auto;
@@ -41,7 +42,29 @@ p{
     flex-direction: column;
     justify-content: space-between;
     background-color: #14191f; 
-    border-radius: 10px;   
+    border-radius: 10px 10px 0px 0px;   
+}
+.slider_container{
+    max-width:100%;  
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #232c38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider_wrapper{    
+    width: 600px;
+    height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #14191f; 
+    border-radius: 0;   
 }
 .slider_wrapper > input {
 	display: none;
@@ -50,6 +73,8 @@ p{
     margin-top: 20px;
     width: 100%;
     height: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -172,4 +197,51 @@ label::before{
 }
 #rad4:checked ~ .slider_bottom .slider_text .text_colection{
     left: -300%;
+}
+
+.footer_container {
+    max-width:100%;  
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #232c38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.line_footer {
+    margin-top: -2px;
+    width: 600px;
+    height: 2px;
+    background: linear-gradient(90deg, #14191F, #232c38, #acb6be56, #232c38, #14191F);
+}
+
+.footer_wrapper {
+    width: 600px;
+    height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #14191f; 
+    border-radius: 0px 0px 10px 10px;     
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+    width: 80px;
+}
+
+
+.icon {
+    margin-top: 0px;
+    margin-left: 0px;   
+    height: 25px;
 }

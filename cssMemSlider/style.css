@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-color: #232c38;
+    background-color: #232c38;    
 }
 h1{
     padding-bottom: 5px;
@@ -84,8 +84,7 @@ p{
     transition: all .5s ease;
 }
 .slider_img{    
-    width: 100%;  
-   max-height: calc(100vh - 200px);
+    width: 100%;     
     overflow: hidden; 
     border-radius: 10px;    
     border: 4px #acb6be solid;
@@ -94,6 +93,7 @@ p{
 .slide{    
     width: 100%; 
     margin-bottom: -5px; 
+    height: auto;
 }
 
 .slide>img{
@@ -283,6 +283,7 @@ p{
     p {
         padding-top: 10px;
         font-size: 14px;
+       
     }
     .header_wrapper{
         margin-top: 0px; 
@@ -320,4 +321,10 @@ p{
     }
     
    
+}
+
+@media (max-width:340px){
+  p {
+    letter-spacing: 1px;
+  }
 }
